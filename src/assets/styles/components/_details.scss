@@ -1,0 +1,38 @@
+.recipe-page{
+  img {
+    padding:10px;
+    //float: left;
+    width: 50%;
+  }
+  .video{
+    width: 400 !important;
+    height: 300 !important; 
+  }
+  h2{
+    margin:10px;
+  }
+  a{
+    font-size:15px;
+    color:$dark-gray-color;
+    padding:5px;
+  }
+  p{
+    
+    padding:10px;
+    img{
+      width: 40px;
+    }
+  }
+}
+
+.title{
+  background-color:$mainColor;
+
+  .date{
+    margin-top:20px;
+  }
+
+  h1{
+    color:white;
+  }
+}

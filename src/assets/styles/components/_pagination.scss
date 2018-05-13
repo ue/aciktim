@@ -1,0 +1,22 @@
+.pagination{
+  display: flex;
+  .page-item{
+    a{
+      padding: 13px 5px 5px;
+      margin: 0 10px;
+      position: relative;
+      color:$mainColor;
+      border: 1px solid transparent;
+      border-color:$mainColor;
+      width: 40px;
+      border-radius: 3px;
+    }
+    border-color:black;
+  }
+  .active{
+    a{
+      background-color:$mainColor;
+      color:#fff;
+    }
+  }
+}

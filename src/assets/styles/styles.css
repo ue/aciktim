@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+* Hide only visually, but have it available for screen readers: h5bp.com/v
+*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 100%; }
+
+body {
+  background-color: #fff;
+  color: #505050;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+img, svg {
+  max-width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0; }
+
+* + * {
+  margin-top: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin-bottom: -0.1em; }
+
+p {
+  font-size: 0.875em;
+  color: #777; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+a {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  color: red; }
+
+.header {
+  background: #fff;
+  height: 90px;
+  box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header * {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header .header-banner {
+    align-items: flex-start;
+    flex-direction: column; }
+
+.container {
+  display: grid;
+  align-content: end;
+  padding: 2em; }
+  .container h1 {
+    font-size: 1.5rem; }
+  .container h2 {
+    font-size: 1rem; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.cards_item {
+  display: flex;
+  margin-top: 0;
+  padding: 0 1em 2em; }
+  .no-flexbox .cards_item {
+    float: left; }
+  @media screen and (min-width: 42em) and (max-width: 60em) {
+    .cards_item {
+      width: 50%; }
+      .no-flexbox .cards_item:nth-child(2n+1) {
+        clear: both; } }
+  @media screen and (min-width: 60em) {
+    .cards_item {
+      width: 24.3333%; }
+      .no-flexbox .cards_item:nth-child(3n+1) {
+        clear: both; } }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2 solid red;
+  box-shadow: 0px 0px 7px #aaaaaa;
+  cursor: pointer; }
+  .card:hover {
+    box-shadow: 0px 2px 30px #aaaaaa;
+    transition: 500ms; }
+    .card:hover .profile {
+      opacity: 1;
+      transition: 2s; }
+    .card:hover img {
+      opacity: 1;
+      transition: 1s; }
+
+.card_image img {
+  width: 100%;
+  opacity: 0.9; }
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  opacity: 0; }
+  .profile p {
+    font-size: 0.8rem;
+    margin-left: 10px; }
+
+.user-avatar {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  float: left; }
+
+.card_content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  margin-top: 0;
+  padding: 1em; }
+  .card_content h2 {
+    color: #333333; }
+  .card_content p {
+    flex: 1 0 auto; }
+
+.pagination {
+  display: flex; }
+  .pagination .page-item {
+    border-color: black; }
+    .pagination .page-item a {
+      padding: 13px 5px 5px;
+      margin: 0 10px;
+      position: relative;
+      color: tomato;
+      border: 1px solid transparent;
+      border-color: tomato;
+      width: 40px;
+      border-radius: 3px; }
+  .pagination .active a {
+    background-color: tomato;
+    color: #fff; }
+
+.recipe-page img {
+  padding: 10px;
+  width: 50%; }
+
+.recipe-page .video {
+  width: 400 !important;
+  height: 300 !important; }
+
+.recipe-page h2 {
+  margin: 10px; }
+
+.recipe-page a {
+  font-size: 15px;
+  color: #333333;
+  padding: 5px; }
+
+.recipe-page p {
+  padding: 10px; }
+  .recipe-page p img {
+    width: 40px; }
+
+.title {
+  background-color: tomato; }
+  .title .date {
+    margin-top: 20px; }
+  .title h1 {
+    color: white; }

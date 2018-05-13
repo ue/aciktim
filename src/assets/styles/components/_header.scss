@@ -1,0 +1,15 @@
+.header {
+  background: $header-color;
+  height: 90px;
+  box-shadow: 0 0 25px -5px rgba(0,0,0,.3);
+  @include flex-center-column;
+
+  * {
+    @include flex-center;
+  }
+
+  .header-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
