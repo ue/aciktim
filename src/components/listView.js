@@ -5,7 +5,6 @@ import ListPaginationView from './listPaginationView';
 export const ListView = props => {
   const {
     recipes,
-    pager,
     currentPage,
     recipesCount,
     pageCount
@@ -31,10 +30,10 @@ export const ListView = props => {
           {
             recipes.map(recipe => {
               return (
-                <ListItemView
-                  recipe={recipe}
-                  key={recipe.slug}
-                />
+                  <ListItemView
+                    recipe={recipe}
+                    key={recipe.Id}
+                  />
               );
             })
           }

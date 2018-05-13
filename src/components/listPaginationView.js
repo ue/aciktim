@@ -34,7 +34,7 @@ const ListPaginationView = props => {
               <li
                 className={ isCurrent ? 'page-item active' : 'page-item' }
                 onClick={handleOnClick}
-                key={count.toString()}>
+                key={count}>
                 <a href="">{count + 1}</a>
               </li>
             );

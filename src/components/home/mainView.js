@@ -40,7 +40,6 @@ class MainView extends Component {
 
   render () {
     const {
-      pager,
       recipes,
       loading,
       recipeCount,
@@ -51,7 +50,6 @@ class MainView extends Component {
     return (
       <div className="">
         <ListView
-          pager={pager}
           recipes={recipes}
           loading={loading}
           recipesCount={recipeCount}
